@@ -5,7 +5,8 @@ from selenium.webdriver.common.keys import Keys
 
 
 def jobClockIn(unity_id, password, student_id):
-    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
+    driver = webdriver.PhantomJS();
+    #driver = webdriver.Chrome('/usr/local/bin/chromedriver')
     driver.get('https://portalsp.acs.ncsu.edu/shibboleth-ds/?entityID=https%3A%2F%2Fportalsp.acs.ncsu.edu%2Fsp%2Fshibboleth&return=https%3A%2F%2Fportalsp.acs.ncsu.edu%2FShibboleth.sso%2FLogin%3FSAMLDS%3D1%26target%3Dss%253Amem%253A81c86f4c32490f1cdb39ff3f2de504c2041a62cc02553eab6c140f97a9272652')
 
     driver.find_element_by_xpath(
@@ -32,7 +33,8 @@ def jobClockIn(unity_id, password, student_id):
 
 
 def jobClockOut(unity_id, password, student_id):
-    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
+    driver = webdriver.PhantomJS();
+    #driver = webdriver.Chrome('/usr/local/bin/chromedriver')
     driver.get('https://portalsp.acs.ncsu.edu/shibboleth-ds/?entityID=https%3A%2F%2Fportalsp.acs.ncsu.edu%2Fsp%2Fshibboleth&return=https%3A%2F%2Fportalsp.acs.ncsu.edu%2FShibboleth.sso%2FLogin%3FSAMLDS%3D1%26target%3Dss%253Amem%253A81c86f4c32490f1cdb39ff3f2de504c2041a62cc02553eab6c140f97a9272652')
 
     driver.find_element_by_xpath(
